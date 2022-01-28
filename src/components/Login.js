@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
-import logo from './logo.png'
+import logo from '../assets/logo.png'
+import user from '../assets/user.png'
+
 function Login() {
   return (
     <div className='black-bubble'>
@@ -17,9 +18,9 @@ function Login() {
             <div>
                 <h2>LOGIN</h2>
                 <p>Enter your details below</p>
-                <br/>
+                
             </div>
-            <img src="" alt=""></img>
+            <img src={user} alt="user" className='user-img'></img>
             <select name="user-type">
                 <option value="Select-User">Select User</option>
                 <option value="President">President</option>
