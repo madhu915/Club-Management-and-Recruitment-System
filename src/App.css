@@ -136,6 +136,7 @@ input,select{
 .logo-head{
   display: inline;
   position: fixed;
+  color:#fff;
   margin-top: 10px;
 }
 .logo{
@@ -154,7 +155,7 @@ form{
   display: flex;
   flex-direction: column;
   padding: 42%;
-  margin-top: 43px;
+  margin-top: 14px;
 }
 @keyframes form {
   from {margin-top: -70vh;}
@@ -189,5 +190,10 @@ position: relative;
 display: inline;
 text-align: center;
 left: 102%;
+}
+.user-img{
+  width: 16vh;
+    padding: 2%;
+    margin-left: 67px;
 }
 }
