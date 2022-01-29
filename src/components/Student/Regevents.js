@@ -5,7 +5,7 @@ import Spotlight from "../../assets/images/Spotlight.jpg";
 function Regevents() {
 	return (
 		<div>
-			<h4 class="welcome mx-5 my-3 mt-5">Registered events</h4>
+			<h4 class="welcome mx-5 my-3 mt-5 text-white">Registered events</h4>
 
 			<div class="events mx-5">
 				<div class="card mb-5">
