@@ -7,7 +7,7 @@ body {
 		padding: 2%;
 		height: 13vh;
 		margin-bottom: 4%;
-		margin-left: 15vh;
+		margin-left: 10vh;
 	}
 	.black-bubble {
 		background-color: #db2b2b;
@@ -113,7 +113,7 @@ body {
 		border-radius: 28px;
 		width: 26vh;
 		position: relative;
-		left: 55px;
+		left: 20px;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -212,7 +212,7 @@ body {
 		border-radius: 28px;
 		width: 26vh;
 		position: relative;
-		left: 50px;
+		left: 10px;
 	}
 	.header {
 		color: #000;
@@ -227,6 +227,6 @@ body {
 	.user-img {
 		width: 16vh;
 		padding: 2%;
-		margin-left: 67px;
+		margin-left: 50px;
 	}
 }

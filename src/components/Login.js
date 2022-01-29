@@ -2,7 +2,39 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import user from "../assets/images/user.png";
 import "../assets/styles/login.css";
+import { useState } from "react";
+
 function Login() {
+	const [username, setusername] = useState("");
+	const [password, setpassword] = useState("");
+	const [usertype, setusertype] = useState("President");
+	const onChangeHandler = (fieldName, value) => {
+		if (fieldName === "username") {
+			setusername(value);
+		} else if (fieldName === "password") {
+			setpassword(value);
+		} else if (fieldName === "usertype") {
+			setusertype(value);
+		}
+	};
+	const onSubmitHandler = (e) => {
+		e.preventDefault();
+		if (username.trim() === "" || password.trim() === "") {
+			alert("required both field");
+		} else {
+			if (
+				username === "admin@abc.com" &&
+				password === "$abc@svce22" &&
+				usertype === "President"
+			) {
+				alert("Successfully Logged in!!");
+				setusername("");
+				setpassword("");
+			} else {
+				alert("Incorrect Login!!");
+			}
+		}
+	};
 	return (
 		<div className="black-bubble">
 			<div className="header">
@@ -19,20 +51,54 @@ function Login() {
 					laoreet tellus.{" "}
 				</p>
 			</div>
-			<form action="#" className="loginform">
+			<form
+				className="loginform"
+				action="#"
+				onSubmit={(e) => {
+					onSubmitHandler(e);
+				}}
+			>
 				<div>
 					<h2>LOGIN</h2>
 					<p>Enter your details below</p>
 				</div>
 				<img src={user} alt="user" className="user-img"></img>
-				<select name="user-type">
-					<option value="Select-User">Select User</option>
-					<option value="President">President</option>
-					<option value="Student">Student</option>
+				<select
+					className="text-white"
+					name="user-type"
+					onChange={(e) => onChangeHandler("usertype", e.target.value)}
+				>
+					<option value="Select-User" className="text-black">
+						Select User
+					</option>
+					<option value="President" className="text-black">
+						President
+					</option>
+					<option value="Student" className="text-black">
+						Student
+					</option>
 				</select>{" "}
 				<br />
-				<input type="text" name="user" placeholder="Username"></input> <br />
-				<input type="text" name="password" placeholder="Password"></input>
+				<input
+					type="text"
+					name="user"
+					placeholder="Username"
+					value={username}
+					onChange={(e) => {
+						onChangeHandler("username", e.target.value);
+					}}
+				></input>{" "}
+				<br />
+				<input
+					className="text-white"
+					type="password"
+					name="password"
+					placeholder="Password"
+					value={password}
+					onChange={(e) => {
+						onChangeHandler("password", e.target.value);
+					}}
+				></input>
 				<br />
 				<button className="submit" type="submit">
 					Login
