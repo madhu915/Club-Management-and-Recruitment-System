@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+	font-family: "Roboto", sans-serif;
+}
+.welcome {
+	animation: welcome 3s linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item > img {
+	height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+	width: 250px;
+}
+.card > img {
+	width: 250px;
+	height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-body > p {
+	height: 120px;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes welcome {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(1rem);
+	}
+}
+.navbar {
+	background-color: #db2b2b;
+}
+.navbar-brand,
+.nav-link,
+.nav-link:hover,
+.navbar-brand:hover {
+	color: white;
+}
+.card {
+	animation: card 3s linear;
+}
+@keyframes card {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(1rem);
+	}
+}
+.notify-icon {
+	color: white;
+}
+.events {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+}
+.btn {
+	background-color: #db2b2b;
+	color: white;
+}
+.footer {
+	width: 100%;
+	background-color: #db2b2b;
+	height: 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 740px) {
+	.events {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 540px) {
+	.events {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.events {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		justify-items: center;
+	}
 }
