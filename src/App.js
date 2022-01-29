@@ -1,4 +1,4 @@
-import "./App.css";
+import "./student.css";
 import Nav from "./components/nav";
 import Events from "./components/events";
 import Greeting from "./components/greeting";
