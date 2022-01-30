@@ -27,7 +27,17 @@ function Login() {
 				password === "$abc@svce22" &&
 				usertype === "President"
 			) {
-				alert("Successfully Logged in!!");
+				if (!alert("Successfully Logged in!!"))
+					document.location = "http://localhost:3000/president";
+				setusername("");
+				setpassword("");
+			} else if (
+				username === "student@abc.com" &&
+				password === "$abc@svce22" &&
+				usertype === "Student"
+			) {
+				if (!alert("Successfully Logged in!!"))
+					document.location = "http://localhost:3000/student";
 				setusername("");
 				setpassword("");
 			} else {
