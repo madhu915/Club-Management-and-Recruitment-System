@@ -1,7 +1,7 @@
 import "../assets/styles/president.css";
-import Abstraction from "../assets/images/abstraction_1.0.jpg";
-import Disrupt from "../assets/images/disrupt.jpg";
-import Women from "../assets/images/women_in_tech.png";
+import Abstraction from "../assets/images/conf-workshop.jpg";
+import Disrupt from "../assets/images/gmeet.jpg";
+import Women from "../assets/images/hack.jpg";
 import Spotlight from "../assets/images/Spotlight.jpg";
 import Welcome from "../assets/images/welcome.jpg";
 import $ from "jquery";
@@ -64,7 +64,7 @@ function President() {
 						</ul>
 					</li>
 					<li>
-						<a href="register">Create a form</a>
+						<a href="createform">Create a form</a>
 					</li>
 				</ul>
 
@@ -100,7 +100,7 @@ function President() {
 									The first part was an online elocution contest conducted on
 									the morning of 27th March, 2021.
 								</p>
-								<a href="register" className="btn">
+								<a href="createform" className="btn">
 									Create a form
 								</a>
 							</div>
@@ -113,7 +113,7 @@ function President() {
 									Women in Tech, a webinar was organized by the SVCE ACM -W
 									Student Chapter. It was conducted on 10th September, 2020.
 								</p>
-								<a href="register" className="btn">
+								<a href="createform" className="btn">
 									Create a form
 								</a>
 							</div>
@@ -126,7 +126,7 @@ function President() {
 									The SVCE ACM Student Chapter conducted its first event for the
 									AY 2020-21, Abstraction 1.0, on the 29th of August (Saturday).
 								</p>
-								<a href="register" className="btn">
+								<a href="createform" className="btn">
 									Create a form
 								</a>
 							</div>
@@ -139,7 +139,7 @@ function President() {
 									Disrupt is a technical debate contest which was conducted for
 									the 4th time by SVCE ACM Student Chapter on 14th Feb, 2021.
 								</p>
-								<a href="register" className="btn">
+								<a href="createform" className="btn">
 									Create a form
 								</a>
 							</div>
