@@ -64,7 +64,7 @@ function President() {
 						</ul>
 					</li>
 					<li>
-						<a href="createform">Create a form</a>
+						<a href="recruitment">Create a recruitment form</a>
 					</li>
 				</ul>
 

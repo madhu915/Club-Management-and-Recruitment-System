@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import President from "./components/President";
 import React from "react";
 import BuildForm from "./components/buildform/buildform";
+import RecruitmentForm from "./components/Recruitmentform";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path="/president" element={<President />} />
 					<Route path="/student" element={<Student />} />
 					<Route path="/createform" element={<BuildForm />} />
+					<Route path="/recruitment" element={<RecruitmentForm />} />
 				</Routes>
 			</Router>
 		</React.Fragment>

@@ -14,7 +14,9 @@ function Upcoming() {
 						The first part was an online elocution contest conducted on the
 						morning of 27th March, 2021.
 					</p>
-					<button className="btn">Register</button>
+					<a href="register" className="btn">
+						Register
+					</a>
 				</div>
 			</div>
 
@@ -25,7 +27,9 @@ function Upcoming() {
 						Women in Tech, a webinar was organized by the SVCE ACM -W Student
 						Chapter. It was conducted on 10th September, 2020.
 					</p>
-					<button className="btn">Register</button>
+					<a className="btn" href="register">
+						Register
+					</a>
 				</div>
 			</div>
 
@@ -36,7 +40,9 @@ function Upcoming() {
 						The SVCE ACM Student Chapter conducted its first event for the AY
 						2020-21, Abstraction 1.0, on the 29th of August (Saturday).
 					</p>
-					<button className="btn">Register</button>
+					<a className="btn" href="register">
+						Register
+					</a>
 				</div>
 			</div>
 
@@ -47,7 +53,9 @@ function Upcoming() {
 						Disrupt is a technical debate contest which was conducted for the
 						4th time by SVCE ACM Student Chapter on 14th Feb, 2021.
 					</p>
-					<button className="btn">Register</button>
+					<a href="register" className="btn">
+						Register
+					</a>
 				</div>
 			</div>
 		</div>
